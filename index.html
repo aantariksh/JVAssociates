@@ -26,14 +26,17 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Append
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .modal-backdrop {
+      background-color: black !important; /* Change to black or any color */
+      opacity: 0.85 !important; /* Increase the opacity for a darker effect */
+    }
+    .fixed-height {
+      height: 250px; /* Set a fixed height for all images */
+      object-fit: cover; /* Ensure the image scales properly and maintains aspect ratio */
+      width: 100%; /* Ensure the image covers the entire width */
+    }   
+  </style>
 </head>
 
 <body class="index-page">
@@ -140,28 +143,28 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
               <p>Clients</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="37" data-purecounter-duration="1" class="purecounter"></span>
               <p>Projects</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
+              <span data-purecounter-start="0" data-purecounter-end="520" data-purecounter-duration="1" class="purecounter"></span>
+              <p>No. of Hours</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
               <p>Workers</p>
             </div>
           </div><!-- End Stats Item -->
@@ -311,69 +314,108 @@
       </div><!-- End Section Title -->
 
       <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="col-lg-3 col-md-6 portfolio-item mb-4">
+            <img src="assets/img/portfolio/0.jpeg" class="img-fluid fixed-height" alt="">
+            <div class="portfolio-info">
+              <h4>Mr. Mayur Khandelwal, Faizpur</h4>
+              <p>Built-up area: 6000 sq.ft</p>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#portfolioModal" class="preview-link">
+                <i class="bi bi-zoom-in" id="p-0"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 portfolio-item mb-4">
+            <img src="assets/img/portfolio/1.jpeg" class="img-fluid fixed-height" alt="">
+            <div class="portfolio-info">
+              <h4>Mr. Tushar Rajput, Jalgaon</h4>
+              <p>Built-up area: 7000 sq.ft</p>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#portfolioModal" class="preview-link">
+                <i class="bi bi-zoom-in" id="p-1"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 portfolio-item mb-4">
+            <img src="assets/img/portfolio/2.jpeg" class="img-fluid fixed-height" alt="">
+            <div class="portfolio-info">
+              <h4>Mr. Sachin Khadke, Jalgaon</h4>
+              <p>Built-up area: 3000 sq.ft</p>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#portfolioModal" class="preview-link">
+                <i class="bi bi-zoom-in" id="p-2"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 portfolio-item mb-4">
+            <img src="assets/img/portfolio/3.jpeg" class="img-fluid fixed-height" alt="">
+            <div class="portfolio-info">
+              <h4>Mr. Abhishek Patil, Pachora</h4>
+              <p>Built-up area: 2500 sq.ft</p>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#portfolioModal" class="preview-link">
+                <i class="bi bi-zoom-in" id="p-3"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 portfolio-item mb-4">
+            <img src="assets/img/portfolio/4.jpeg" class="img-fluid fixed-height" alt="">
+            <div class="portfolio-info">
+              <h4>Mr. Suresh Patil, Jalgaon</h4>
+              <p>Built-up area: 3000 sq.ft</p>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#portfolioModal" class="preview-link">
+                <i class="bi bi-zoom-in" id="p-4"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 portfolio-item mb-4">
+            <img src="assets/img/portfolio/5.jpeg" class="img-fluid fixed-height" alt="">
+            <div class="portfolio-info">
+              <h4>Row Houses, Jalgaon</h4>
+              <p>Built-up area: 3000 sq.ft</p>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#portfolioModal" class="preview-link">
+                <i class="bi bi-zoom-in" id="p-5"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 portfolio-item mb-4 d-none">
+            <img src="assets/img/portfolio/6.jpeg" class="img-fluid fixed-height" alt="">
+            <div class="portfolio-info">
+              <h4>Mr. Nishikant Patil, Jalgaon</h4>
+              <p>Built-up area: 3500 sq.ft</p>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#portfolioModal" class="preview-link">
+                <i class="bi bi-zoom-in" id="p-6"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 portfolio-item mb-4">
+            <img src="assets/img/portfolio/7.jpeg" class="img-fluid fixed-height" alt="">
+            <div class="portfolio-info">
+              <h4>Mr. Dinkar Patil, Jalgaon</h4>
+              <p>Built-up area: 2000 sq.ft</p>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#portfolioModal" class="preview-link">
+                <i class="bi bi-zoom-in" id="p-7"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 portfolio-item mb-4">
+            <img src="assets/img/portfolio/8.jpeg" class="img-fluid fixed-height" alt="">
+            <div class="portfolio-info">
+              <h4>Surendra Apartment, Bhusawal</h4>
+              <p>Built-up area: 15000 sq.ft</p>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#portfolioModal" class="preview-link">
+                <i class="bi bi-zoom-in" id="p-8"></i>
+              </a>
+            </div>
+          </div>     
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Zaveri Greens, Ahmedabad</h4>
-                <p>Built-up area: 70,000.00 sqm</p>
-                <a href="assets/img/portfolio/1.png" title="Zaveri Greens, Ahmedabad" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Zaveri Residence, Ahmedabad (Indigo Architects, Ahmedabad)</h4>
-                <p>Built-up area: 1500.00 sqm</p>
-                <a href="assets/img/portfolio/2.png" title="Zaveri Residence, Ahmedabad" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Saboo Mansion, Odisha</h4>
-                <p>Built-up area: 1600.00 sqm</p>
-                <a href="assets/img/portfolio/3.png" title="Saboo Mansion, Odisha" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/4.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Khandelwal Bungalow, Faizpur (Ar. Varun Kotecha, Jalgaon)</h4>
-                <p>Built-up area: 400.00 sqm</p>
-                <a href="assets/img/portfolio/4.png" title="Khandelwal Bungalow, Faizpur" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/5.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>River Side Apartment, Nashik (Ar. Sanjay Puri, Mumbai)</h4>
-                <p>Built-up area: 2450.00 sqm</p>
-                <a href="assets/img/portfolio/5.png" title="River Side Apartment, Nashik" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/6.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>NRA Building, Delhi (Ar. Nilesh Chopda – Onus Design Studio, Pune)</h4>
-                <p>Built-up area: 2700.00 sqm</p>
-                <a href="assets/img/portfolio/6.png" title="NRA Building, Delhi" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+        </div><!-- End Portfolio Container -->
       </div>
 
     </section><!-- /Portfolio Section -->
@@ -707,8 +749,8 @@
                 <div class="info-item" data-aos="fade" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Locations</h3>
-                  <p>Jalgaon - Dhule - Nasik </p>
-                  <p>Mumbai - Pune</p>
+                  <p>Jalgaon - Dhule </p>
+                  <p>Ahmedabad - Nashik</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -716,7 +758,7 @@
                 <div class="info-item" data-aos="fade" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p>+91 90221 3950</p>
+                  <p>+91 90221 39450</p>
                   <p>+91 91309 91899</p>
                 </div>
               </div><!-- End Info Item -->
@@ -734,7 +776,7 @@
                   <i class="bi bi-clock"></i>
                   <h3>Open Hours</h3>
                   <p>Monday - Saturday</p>
-                  <p>9:00AM - 07:00PM</p>
+                  <p>10:00AM - 07:00PM</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -804,11 +846,11 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
           </ul>
         </div>
 
@@ -825,10 +867,10 @@
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Locations</h4>
-          <p>Jalgaon - Dhule - Nasik </p>
-          <p>Mumbai - Pune</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p>Jalgaon - Dhule</p>
+          <p>Ahmedabad - Nashik</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 91309 91899</span></p>
+          <p><strong>Email:</strong> <span>info@thejvassociates.com</span></p>
         </div>
 
       </div>
@@ -841,13 +883,45 @@
       </div>
     </div>
 
-  </footer>
+  </footer>  
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="clientName" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="clientName">Client Name</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center mb-3">
+            <img id="projectImage" src="https://via.placeholder.com/400x300" class="img-fluid" style="height: 50vh;">
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-6 px-5">
+              <h5>Project Details:</h5>
+              <ul class="list-unstyled">
+                <li><strong>Location:</strong> <span id="location"></span></li>
+                <li><strong>Area:</strong> <span id="area"></span></li>
+                <li><strong>Architect:</strong> <span id="architect"></span></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5>Special Features:</h5>
+              <ul id="specialFeatures"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -861,6 +935,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/portfolio.js"></script>
 
 </body>
 
