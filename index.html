@@ -785,30 +785,26 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form method="post" id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="from_name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" name="from_email" class="form-control" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required="">
                 </div>
 
                 <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea name="message" class="form-control" rows="6" placeholder="Message" required=""></textarea>
                 </div>
 
                 <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
                   <button type="submit">Send Message</button>
                 </div>
 
@@ -932,6 +928,35 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    (function() {
+      emailjs.init('REAsA1Ek1zXLcn_Mo')
+      
+      // Handle form submission
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          // Send the email using the template parameters
+          emailjs.sendForm('service_iexfl6f', 'template_3xc0sid', this)
+            .then(function(response) {
+              Swal.fire({
+                title: "Email sent successfully!",
+                text: "Our team will contact you shortly.",
+                icon: "success"
+              }).then(() => location.reload())
+            }, function(error) {
+              Swal.fire({
+                title: "Failed to send email",
+                text: error || '',
+                icon: "error"
+              });
+            });
+      });
+    })();
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
