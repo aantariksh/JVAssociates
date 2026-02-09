@@ -1,97 +1,93 @@
 const portfolioData = [
-    {
-      "client": "Mr. Mayur Khandelwal",
-      "location": "Faizpur",
-      "area": "6000 sq.ft",
-      "architect": "Ar. Varun Kotecha",
-      "specialFeatures": [
-        "3m Cantilever Balcony",
-        "Slab Spanning 4m x 5m"
-      ]
-    },
-    {
-      "client": "Mr. Tushar Rajput",
-      "location": "Jalgaon",
-      "area": "7000 sq.ft",
-      "architect": "Ar. Mohit Metkar",
-      "specialFeatures": [
-        "3.2m Balcony Which is Hanging from 5.5M Simply Supported Beam",
-        "All Spanning Above 5m",
-        "Elevation Boxing as per planning"
-      ]
-    },
-    {
-      "client": "Mr. Sachin Khadke",
-      "location": "Jalgaon",
-      "area": "3000 sq.ft",
-      "architect": "Ar. Mohit Metkar",
-      "specialFeatures": [
-        "Floating Columns",
-        "Elevation Treatment as per plan",
-        "Extra Loading for Plantation on Roof"
-      ]
-    },
-    {
-      "client": "Mr. Abhishek Patil",
-      "location": "Pachora",
-      "area": "2500 sq.ft",
-      "architect": "Ar. Mohit Metkar",
-      "specialFeatures": [
-        "Elevation Treatment as per plan",
-        "Extra Loading for Plantation on Roof",
-        "5.6m Span Beam having heavy loading like Sunk, Plantation, etc., designed in 450 mm Depth to suffice Arch. Requirement"
-      ]
-    },
-    {
-      "client": "Mr. Suresh Patil",
-      "location": "Jalgaon",
-      "area": "3000 sq.ft",
-      "architect": "Ar. Mohit Metkar",
-      "specialFeatures": [
-        "Sloping Roof",
-        "Elevation Treatment"
-      ]
-    },
-    {
-      "client": "Row Houses",
-      "location": "Jalgaon",
-      "area": "3000 sq.ft",
-      "architect": "Ar. Mohit Metkar",
-      "specialFeatures": [
-        "Economical Design",
-        "Elevation Treatment"
-      ]
-    },
-    {
-      "client": "Mr. Nishikant Patil",
-      "location": "Jalgaon",
-      "area": "3500 sq.ft",
-      "architect": "Ar. Mohit Metkar",
-      "specialFeatures": [
-        "2.5m Cantilever Balcony"
-      ]
-    },
-    {
-      "client": "Mr. Dinkar Patil",
-      "location": "Jalgaon",
-      "area": "2000 sq.ft",
-      "architect": "Ar. Mohit Metkar",
-      "specialFeatures": [
-        "3m Cantilever Balcony",
-        "Elevation Treatment"
-      ]
-    },
-    {
-      "client": "Surendra Apartment",
-      "location": "Bhusawal",
-      "area": "15000 sq.ft",
-      "architect": "Ar. Varun Kotecha",
-      "specialFeatures": [
-        "G+5 Residential Apartment",
-        "Parking Space for 20 cars",
-        "Proposed PT Beams for Large Spans"
-      ]
-    }
+  {
+    "client": "Tukaram Pande",
+    "location": "Muktainagar",
+    "area": "420.00 sqm (Ground + First)",
+    "architect": "Ar. Suraj Potdar",
+    "specialFeatures": [
+      "All Spanning Above 4m.",
+      "Elevation Boxing as per planning"
+    ]
+  },
+  {
+    "client": "Manpur Bungalow",
+    "location": "Chattisgarh",
+    "area": "700.00 sqm (Ground + First + Second)",
+    "architect": "Ar. Rishabh Chordiya",
+    "specialFeatures": [
+      "3.2 M Cantilever Slab",
+      "All Spanning Above 5m.",
+      "Elevation Boxing as per planning",
+      "3m Drop Pardi Hanging From 2.5m Cantilever Beam"
+    ]
+  },
+  {
+    "client": "Patne House",
+    "location": "Solapur",
+    "area": "220.00 sqm (Ground + First)",
+    "architect": "Ar. Dattaprasad Pandit",
+    "specialFeatures": [
+      "All Spanning Above 4m.",
+      "Elevation Boxing as per planning"
+    ]
+  },
+  {
+    "client": "Mr. Anil Bungalow",
+    "location": "Bhosari, Pune",
+    "area": "400.00 sqm (Ground + Three)",
+    "architect": "Ar. Shubham Chajjed",
+    "specialFeatures": [
+      "No intermediate columns, providing an end-to-end clear span of 7.5 m.",
+      "Elevation Boxing as per planning"
+    ]
+  },
+  {
+    "client": "Surendra Apartment",
+    "location": "Bhusawal",
+    "area": "1200.00 sqm (G+5 Residential Apartment)",
+    "architect": "Ar. Varun Kotecha",
+    "specialFeatures": [
+      "G+5 Residential Apartment",
+      "Parking Space for 6 cars Proposed",
+      "PT Beams for Large Spans"
+    ]
+  },
+  {
+    "client": "Vakratund Apartment",
+    "location": "Muktainagar",
+    "area": "1400.00 sqm (G+5 Residential Apartment)",
+    "architect": "Ar. Mohit Metkar",
+    "specialFeatures": [
+      "G+5 Residential Apartment",
+      "Parking Space for 6 cars Proposed",
+      "RCC Beam have been proposed for the floating columns, without any PT Beam"
+    ]
+  },
+  {
+    "client": "Vaibhav Patil",
+    "location": "Jalgaon",
+    "area": "5000.00 sqm (P+7 Residential Apartment)",
+    "architect": "Ar. Anand Mukund",
+    "specialFeatures": [
+      "P+7 Residential Apartment",
+      "Parking Space for 26 cars Proposed",
+      "PT Beams for Large Spans"
+    ]
+  },
+  {
+    "client": "Proposed Rajarshi Chhatrapati Shahu Maharaj Statue",
+    "location": "Kalamandir, Dhule",
+    "area": "N/A",
+    "architect": "N/A",
+    "specialFeatures": []
+  },
+  {
+    "client": "Proposed Temple",
+    "location": "Jalgaon",
+    "area": "N/A",
+    "architect": "Ar. Mohit Metkar",
+    "specialFeatures": []
+  }
 ]
   
 // Function to populate modal with portfolio details
